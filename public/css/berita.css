@@ -1,0 +1,76 @@
+.berita {
+  padding: 40px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.berita .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.top h3 {
+  color: #000;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.top h1 {
+  color: #000;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.top p {
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.top .garis {
+  width: 60%;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 20px;
+}
+
+.berita .berita-img {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  padding: 0 130px;
+  line-height: auto;
+}
+
+article h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+article h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+article h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+article p {
+  text-indent: 30px;
+  font-size: 15px;
+}
