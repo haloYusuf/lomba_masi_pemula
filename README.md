@@ -1,5 +1,4 @@
-__Cara menjalankan:__
-
+__Cara menjalankan :__
 - Nyalakan xampp
 - Masuk ke folder xampp
 - buka folder htdocs
@@ -7,3 +6,9 @@ __Cara menjalankan:__
 - taruh semua file dari git kedalam folder lomba
 - import db ke phpmyadmin
 - access via browser dengan url localhost/lomba/public/
+
+__Progress :__
+- Login & Register (Done)
+- Cookie (Done)
+- Penambahan bootstrap di login view
+- Setting logic url (Done)
