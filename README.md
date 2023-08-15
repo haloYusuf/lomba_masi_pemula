@@ -12,4 +12,3 @@ __Progress :__
 - Cookie (Done)
 - Penambahan bootstrap di login view
 - Setting logic url (Done)
-- Upload berita (Done)
