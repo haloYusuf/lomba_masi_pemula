@@ -119,6 +119,10 @@
   text-align: justify;
   font-size: 15px;
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 300px;
 }
 
 .card-berita .btn-berita {
