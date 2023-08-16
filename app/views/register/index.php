@@ -7,46 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="<?=BASE_URL;?>/img/favicon.ico" />
+    <link rel="shortcut icon" href="<?=BASE_URL; ?>/img/favicon.ico" />
     <!-- CSS -->
-    <link rel="stylesheet" href="<?=BASE_URL;?>/css/login.css" />
+    <link rel="stylesheet" href="<?=BASE_URL; ?>/css/login.css" />
     <title>Our webbb</title>
 </head>
 
 <body>
     <div class="container">
         <div class="container__left">
-            <img src="<?=BASE_URL;?>/assets/bg4.png" alt="" />
-            <h2>Welcome Back!</h2>
-            <p>To keep connected with us please login with your personal info</p>
+            <img src="<?=BASE_URL; ?>/assets/bg3.png" alt="" />
+            <h2>Hello, Friend!</h2>
+            <p>Enter your personal details and start your journey with us</p>
         </div>
         <div class="container__right">
             <div class="content">
-                <img class="logo" src="<?=BASE_URL;?>/assets/logo1.png" alt="logo" />
+                <img class="logo" src="<?=BASE_URL; ?>/assets/logo1.png" alt="logo" />
                 <p class="header">Welcome to our website</p>
-                <form action="<?=BASE_URL; ?>/login/proccessLogin" method="POST">
+                <form action="<?=BASE_URL; ?>/register/proccessRegist" method="POST">
                     <div class="input__group">
                         <input type="text" placeholder="Enter Username" name="username" required/>
                     </div>
                     <div class="input__group">
                         <input type="password" placeholder="Enter Password" name="pass" required/>
                     </div>
-                    <p><a href="#">Forgot password?</a></p>
+                    <!-- <div class="input__group">
+                        <input type="password" placeholder="Enter Password" />
+                    </div> -->
                     <?php Flasher::flash(); ?>
-                    <button>Sign In</button>
+                    <button>Sign Up</button>
                 </form>
                 <div class="divider">
                     <span>or</span>
                 </div>
                 <p class="create__account">
-                    New Member? <a href="<?=BASE_URL; ?>/register">Create Account</a>
+                    Already have account? <a href="<?=BASE_URL; ?>/login/">Login</a>
                 </p>
             </div>
         </div>
     </div>
-
-    <script src="<?=BASE_URL;?>/js/login.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>
