@@ -14,13 +14,16 @@
     <link rel="stylesheet" href="<?=BASE_URL; ?>/css/main.css">
     <link rel="stylesheet" href="<?=BASE_URL; ?>/css/homepage.css">
     <link rel="stylesheet" href="<?=BASE_URL; ?>/css/bikin-berita.css">
+    <link rel="stylesheet" href="<?=BASE_URL; ?>/css/berita.css">
 </head>
 
 <body>
     <!-- Nav -->
     <header>
         <div class="logo">
-            <img src="<?=BASE_URL; ?>/img/logo.png">
+            <a href="<?=BASE_URL; ?>/home/">
+                <img src="<?=BASE_URL; ?>/img/logo.png">
+            </a>
         </div>
         <div class="nav">
             <a href="<?=BASE_URL; ?>/home/">Home</a>
@@ -28,7 +31,7 @@
             <a href="
             <?php
                 if (isset($_COOKIE['username']) && !empty($_COOKIE['username'])) {
-                    echo BASE_URL; ?>/content/';
+                    echo BASE_URL; ?>/content/';<?php
                 }else{
                     echo BASE_URL; ?>/login/<?php
                 }
