@@ -1,6 +1,6 @@
 <?php 
 
-class Login_model{
+class Register_model{
     private $table = 'tb_user';
     private $db;
 

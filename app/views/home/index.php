@@ -29,11 +29,11 @@
                                 <p><?=$val['news_created']?></p>
                             </div>
                         </div>
-                        <div class="text">
-                            <p><?=base64_decode($val['news_content']) ?></p>
+                        <div class="content">
+                            <?=base64_decode($val['news_content']) ?>
                         </div>
                     </div>
-                    <a href="<?=BASE_URL ?>/home/detail/<?=base64_encode($val['news_id']) ?>" class="btn-berita">Lanjut Baca</a>
+                    <a href="<?=BASE_URL ?>/home/news/<?=base64_encode($val['news_id']) ?>" class="btn-berita">Lanjut Baca</a>
                 </div>
             <?php endforeach; ?>
         </div>
