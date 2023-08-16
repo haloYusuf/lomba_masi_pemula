@@ -28,13 +28,10 @@
                                 <i class='bx bx-time-five'></i>
                                 <p><?=$val['news_created']?></p>
                             </div>
-                            <div class="daerah">
-                                <i class='bx bx-grid-alt'></i>
-                                <p>Yogyakarta</p>
-                            </div>
                         </div>
-                        <p><?=base64_decode($val['news_content']) ?>
-                        </p>
+                        <div class="text">
+                            <p><?=base64_decode($val['news_content']) ?></p>
+                        </div>
                     </div>
                     <a href="<?=BASE_URL ?>/home/detail/<?=base64_encode($val['news_id']) ?>" class="btn-berita">Lanjut Baca</a>
                 </div>

@@ -114,15 +114,14 @@
   font-size: 20px;
 }
 
-.card-berita .text-berita p {
+.card-berita .text-berita .text p {
   color: #000;
   text-align: justify;
   font-size: 15px;
   font-weight: 400;
-  white-space: nowrap;
+  height: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 300px;
 }
 
 .card-berita .btn-berita {
