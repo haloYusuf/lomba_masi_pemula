@@ -31,7 +31,7 @@
             <a href="
             <?php
                 if (isset($_COOKIE['username']) && !empty($_COOKIE['username'])) {
-                    echo BASE_URL; ?>/content/';<?php
+                    echo BASE_URL; ?>/content/<?php
                 }else{
                     echo BASE_URL; ?>/login/<?php
                 }
