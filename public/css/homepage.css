@@ -113,15 +113,6 @@
   text-overflow: clip;
 }
 
-.card-berita .text-berita p {
-  color: #000;
-  text-align: justify;
-  font-size: 15px;
-  font-weight: 400;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .card-berita .btn-berita {
   padding: 6px 30px;
   background-color: #717775;
