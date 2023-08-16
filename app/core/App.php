@@ -13,9 +13,16 @@ class App{
         //Cek apakah ada file url[0] di folder controller
         if(isset($url[0])){
             if(file_exists('../app/controllers/' . $url[0] . '.php')){
-                if(isset($_COOKIE['username']) && !empty($_COOKIE['username']) && (strtolower($url[0]) == 'login')){
-                    $url[0] = 'home';
-                    header('Location: ' . BASE_URL . '/home');
+                if(isset($_COOKIE['username']) && !empty($_COOKIE['username'])){
+                    if((strtolower($url[0]) == 'login' || strtolower($url[0]) == 'register')){
+                        $url[0] = 'home';
+                        header('Location: ' . BASE_URL . '/home');
+                    }
+                }else{
+                    if((strtolower($url[0]) == 'content')){
+                        $url[0] = 'login';
+                        header('Location: ' . BASE_URL . '/login');
+                    }
                 }
                 $this->controller = $url[0];
                 //Hapus value parameter dari array url

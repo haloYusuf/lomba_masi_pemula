@@ -9,13 +9,16 @@ class Login_model{
         $this->db = new Database;
     }
 
-    public function getUser($data)
+    public function addUser($data)
     {
-        $this->db->runQuery('SELECT * FROM ' . $this->table . ' WHERE user_name=:user_name AND user_pass=:user_pass');
+        $query = "INSERT INTO " . $this->table . " VALUES " 
+                    . "('', :user_name, :user_pass, 1)";
+        $this->db->runQuery($query);
 
         $this->db->bindQuery('user_name', $data['username']);
         $this->db->bindQuery('user_pass', base64_encode($data['pass']));
 
-        return $this->db->result();
+        $this->db->executeQuery();
+        return $this->db->getRowCount();
     }
 }
