@@ -11,7 +11,7 @@
             <div class="garis"></div>
         </div>
         <div class="berita-img">
-            <img src="<?=BASE_IMG_URL . base64_decode($data['news_img']) ?>" width="1200" height="600">
+            <img src="<?=BASE_IMG_URL . base64_decode($data['news_img']); ?>" width="1200" height="600">
         </div>
         <!--📝 isi artikelnya-->
         <article>

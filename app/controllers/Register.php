@@ -9,7 +9,7 @@ class Register extends Controller{
     public function proccessRegist()
     {
         if($this->model('Register_model')->addUser($_POST) > 0){
-            setcookie('username', $_POST['username'], time() + (60 * 60 * 24 * 7), '/');
+            setcookie('data', base64_encode($_POST['username']), time() + (60 * 60 * 24 * 7), '/');
             header('Location: ' . BASE_URL . '/home');
         }else{
             Flasher::setFlasher('gagal', 'register', 'danger');

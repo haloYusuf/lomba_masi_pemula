@@ -10,7 +10,7 @@ class Content extends Controller{
 
     public function submitContent()
     {
-        $fileName = base64_encode($_COOKIE['username']) . '_' . date('Y-m-d_H-i-s') . '.png';
+        $fileName = base64_decode($_COOKIE['data']) . '_' . date('Y-m-d_H-i-s') . '.png';
         $_POST['gambar'] = $fileName;
         $fileAllow = array('jpg', 'png', 'jpeg', 'img');
         $ext = pathinfo($_FILES['gambar']['name'], PATHINFO_EXTENSION);
