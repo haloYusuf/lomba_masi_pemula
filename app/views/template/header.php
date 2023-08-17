@@ -30,8 +30,8 @@
             <!--📝 Bikin file content.html -->
             <a href="
             <?php
-                if (isset($_COOKIE['username']) && !empty($_COOKIE['username'])) {
-                    echo BASE_URL; ?>/content/';<?php
+                if (isset($_COOKIE['data']) && !empty($_COOKIE['data'])) {
+                    echo BASE_URL; ?>/content/<?php
                 }else{
                     echo BASE_URL; ?>/login/<?php
                 }
@@ -40,8 +40,8 @@
             <!-- 📝 Nanti profile diganti sesuai user -->
             <a href="
                 <?php
-                if (isset($_COOKIE['username']) && !empty($_COOKIE['username'])) {
-                    echo BASE_URL; ?>/user/<?php echo $_COOKIE['username'] . '/';
+                if (isset($_COOKIE['data']) && !empty($_COOKIE['data'])) {
+                    echo BASE_URL; ?>/user/<?php echo base64_decode($_COOKIE['data']) . '/';
                 }else{
                     echo BASE_URL; ?>/login/<?php
                 }

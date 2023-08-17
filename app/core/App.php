@@ -13,7 +13,7 @@ class App{
         //Cek apakah ada file url[0] di folder controller
         if(isset($url[0])){
             if(file_exists('../app/controllers/' . $url[0] . '.php')){
-                if(isset($_COOKIE['username']) && !empty($_COOKIE['username'])){
+                if(isset($_COOKIE['data']) && !empty($_COOKIE['data'])){
                     if((strtolower($url[0]) == 'login' || strtolower($url[0]) == 'register')){
                         $url[0] = 'home';
                         header('Location: ' . BASE_URL . '/home');

@@ -9,7 +9,7 @@ class Login extends Controller{
     public function proccessLogin()
     {
         if($this->model('Login_model')->getUser($_POST) > 0){
-            setcookie('username', $_POST['username'], time() + (60 * 60 * 24 * 7), '/');
+            setcookie('data', base64_encode($_POST['username']), time() + (60 * 60 * 24 * 7), '/');
             header('Location: ' . BASE_URL . '/home');
         }else{
             Flasher::setFlasher('gagal', 'login', 'danger');

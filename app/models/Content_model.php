@@ -13,13 +13,13 @@ class Content_model{
     {
 
         $dataUser = $this->getId();
-        $newsId = $_COOKIE['username'] . '_' . $data['Judul'] . '_' . date('Y-m-d_H-i-s');
+        $newsId = base64_encode($_COOKIE['data']) . '_' . $data['Judul'] . '_' . date('Y-m-d_H-i-s');
 
         $query = "INSERT INTO " . $this->table . " VALUES "
                     . "(:news_id, :user_id, :news_title, :news_img, :news_content, now(), 1)";
         $this->db->runQuery($query);
 
-        $this->db->bindQuery('news_id', $newsId);
+        $this->db->bindQuery('news_id', base64_encode($newsId));
         $this->db->bindQuery('user_id', $dataUser['user_id']);
         $this->db->bindQuery('news_title', base64_encode($data['Judul']));
         $this->db->bindQuery('news_img', base64_encode($data['gambar']));
@@ -32,7 +32,7 @@ class Content_model{
     private function getId()
     {
         $this->db->runQuery('SELECT * FROM tb_user WHERE user_name=:user_name');
-        $this->db->bindQuery('user_name', $_COOKIE['username']);
+        $this->db->bindQuery('user_name', base64_decode($_COOKIE['data']));
         return $this->db->result();
     }
 }
