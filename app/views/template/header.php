@@ -11,10 +11,10 @@
     <!-- icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- CSS -->
-    <link rel="stylesheet" href="<?=BASE_URL; ?>/css/main.css">
-    <link rel="stylesheet" href="<?=BASE_URL; ?>/css/homepage.css">
-    <link rel="stylesheet" href="<?=BASE_URL; ?>/css/bikin-berita.css">
-    <link rel="stylesheet" href="<?=BASE_URL; ?>/css/berita.css">
+    <link rel="stylesheet" href="<?=BASE_URL; ?>/css/main.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="<?=BASE_URL; ?>/css/homepage.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="<?=BASE_URL; ?>/css/bikin-berita.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="<?=BASE_URL; ?>/css/berita.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
