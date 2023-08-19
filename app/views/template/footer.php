@@ -20,7 +20,7 @@
         <h3>Copyright by Nusantara - 2023</h3>
     </footer>
     <!-- END Footer -->
-
+<script src="js/navbar.js"></script>
 </body>
 
 </html>
