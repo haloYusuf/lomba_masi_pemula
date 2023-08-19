@@ -19,7 +19,7 @@ class App{
                         header('Location: ' . BASE_URL . '/home');
                     }
                 }else{
-                    if((strtolower($url[0]) == 'content')){
+                    if((strtolower($url[0]) == 'content') || (strtolower($url[0]) == 'profile')){
                         $url[0] = 'login';
                         header('Location: ' . BASE_URL . '/login');
                     }

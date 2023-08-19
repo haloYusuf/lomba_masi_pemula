@@ -48,6 +48,10 @@
   cursor: pointer;
 }
 
+.cari button {
+  background-color: transparent;
+}
+
 .content-berita {
   padding: 0 25px;
   display: flex;
@@ -72,6 +76,8 @@
 .card-berita img {
   border-radius: 10px;
   width: 100%;
+  height: 10vw;
+  object-fit: cover;
   margin-bottom: 10px;
 }
 
@@ -108,6 +114,7 @@
   text-align: justify;
   font-size: 15px;
   font-weight: 400;
+  width: 100%;
   height: 200px;
   overflow: hidden;
   text-overflow: clip;
@@ -120,3 +127,74 @@
   color: #fff;
   border-radius: 15px;
 }
+
+	/* Breakpoint */	
+  @media (max-width:768px) {	
+    /* Hero CSS 768*/	
+    .hero {	
+      gap: 20px;	
+      padding: 40px 75px;	
+    }	
+    .hero img {	
+      width: 35vw;	
+    }	
+    .hero p {	
+      font-size: 20px;	
+    }	
+    /* Berita CSS 768 */	
+    .berita {	
+      padding: 30px 75px;	
+      gap: 25px;	
+    }	
+    .cari {	
+      width: 100%;	
+      padding: 0 25px;	
+      display: flex;	
+      align-items: center;	
+      justify-content: center;	
+    }	
+    .card-berita img {	
+      width: 100%;	
+      height: 300px;	
+      background-size: cover;	
+    }	
+  }	
+  @media (max-width:425px) {	
+    /* Hero CSS 425*/	
+    .hero {	
+      gap: 20px;	
+      padding: 40px 50px;	
+    }	
+    .hero img {	
+      width: 40vw;	
+    }	
+    .hero p {	
+      font-size: 15px;	
+    }	
+    /* Berita CSS 425*/	
+    .berita {	
+      padding: 30px;	
+    }	
+    .card-berita .text-berita {	
+      gap: 8px;	
+    }	
+    .card-berita .text-berita h2 {	
+      font-size: 25px;	
+    }	
+    .keterangan .waktu i {	
+      font-size: 15px;	
+    }	
+    .keterangan .waktu p {	
+      font-size: 12px;	
+    }	
+    .card-berita .text-berita .text p {	
+      font-size: 12px;	
+      height: 180px;	
+      overflow: hidden;	
+      text-overflow: ellipsis;	
+    }	
+    .card-berita .btn-berita {	
+      padding: 6px 25px;	
+      font-size: 15px;	
+    }	
+  }

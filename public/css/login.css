@@ -155,13 +155,12 @@ form button:hover {
   color: #a4c4b5;
 }
 
-@media (width < 788px) {
+@media (max-width: 768px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .container__left,
-  .container__right {
-    min-height: 100vh;
+  .container__left {
+    display: none;
   }
 }

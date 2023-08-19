@@ -12,7 +12,7 @@ class Register_model{
     public function addUser($data)
     {
         $query = "INSERT INTO " . $this->table . " VALUES " 
-                    . "(:user_id, :user_name, :user_pass, 1)";
+                    . "(:user_id, :user_name, :user_pass, 0)";
         $this->db->runQuery($query);
 
         $this->db->bindQuery('user_id', base64_encode($data['username']) . '_' . base64_encode(date('Y-m-d_H-i-s')));

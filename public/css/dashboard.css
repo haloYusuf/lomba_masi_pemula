@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: #A0D8B3;
+}
+.container{
+  display: flex;
+}
+nav{
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #F6F6E9;
+  width: 270px;
+  overflow-x: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  position: fixed;
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+.logo img{
+  width: 200px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+a{
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+  margin: 10px;
+  
+}
+nav .fi{
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+}
+.nav-item{
+  margin-left: 10px;
+  padding-bottom: 15px;
+}
+a:hover{
+  background: #deded1
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+/* Main Section */
+.main{
+  padding: 20px;
+  width: 100%;
+  margin-left: 270px;
+}
+.main-top{
+  width: 100%;
+  background-color: #F6F6E9;
+  padding: 10px;
+  border-radius: 20px;
+}
+.main-top h1 {
+  text-align: center;
+  font-size: 15px;
+  margin-right: 30px;
+  color: rgb(85, 83, 83);
+
+}
+.main-skills{
+  margin-top: 20px;
+
+}
+.main-skills .card{
+  width: 22.9%;
+  margin: 10px;
+  background: #F6F6E9;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  float: left;
+}
+.main-skills .card h3{
+  margin: 10px;
+  text-transform: capitalize;
+  color: rgb(85, 83, 83);
+
+}
+
+
+.main-skills .card .keterangan {
+  align-items: center;
+  display: flex;
+  margin-bottom: -75px;
+}
+.keterangan .waktu{
+  display: flex;
+}
+.keterangan .waktu .bx{
+  font-size: 12px;
+}
+.keterangan .waktu p{
+  font-size: 12px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.keterangan .daerah{
+  display: flex;
+}
+.keterangan .daerah .bx{
+  font-size: 12px;
+}
+.keterangan .daerah p{
+  font-size: 12px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.main-skills .card p{
+  height: 100px;
+  font-size: 10px;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.main-skills .card img {
+  width: 100%;
+}
+.main-skills .card button{
+  background: gray;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+
+}
+.main-skills .card button:hover{
+  background: rgb(85, 83, 83);
+}
+.main-skills .card i{
+  font-size: 22px;
+  padding: 10px;
+}
+
+
+.main-skills .card .btn ul {
+  list-style-type: none;
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+.main-skills .card .btn li {
+  float: left;
+}
+.main-skills .card .btn li a{
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.main-skills .card .btn .button1  { 
+  background-color: #4CAF50;
+  font-size: 10px;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main-skills .card .btn .button1:hover {
+  background: rgb(85, 83, 83);
+}
+
+.main-skills .card .btn .button2 {
+  background-color: rgb(246, 73, 73);
+  font-size: 10px;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+} 
+
+.main-skills .card .btn .button2:hover {
+  background: rgb(85, 83, 83);
+}
+
+.main-skills .card i{
+  font-size: 10px;
+  padding: 10px;
+}
+
+.main-skills .card .content {
+  margin-top: 15px;
+  color: #000;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  height: 150px;
+  overflow: hidden;
+  text-overflow: clip;
+}

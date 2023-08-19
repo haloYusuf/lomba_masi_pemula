@@ -16,7 +16,7 @@ class Content_model{
         $newsId = base64_encode($_COOKIE['data']) . '_' . $data['Judul'] . '_' . date('Y-m-d_H-i-s');
 
         $query = "INSERT INTO " . $this->table . " VALUES "
-                    . "(:news_id, :user_id, :news_title, :news_img, :news_content, now(), 1)";
+                    . "(:news_id, :user_id, :news_title, :news_img, :news_content, now(), 0)";
         $this->db->runQuery($query);
 
         $this->db->bindQuery('news_id', base64_encode($newsId));

@@ -3,14 +3,14 @@
 class Content extends Controller{
     public function index()
     {
-        $this->view('template/header');
+        $this->view('template/home/header');
         $this->view('content/index');
-        $this->view('template/footer');
+        $this->view('template/home/footer');
     }
 
     public function submitContent()
     {
-        $fileName = base64_decode($_COOKIE['data']) . '_' . date('Y-m-d_H-i-s') . '.png';
+        $fileName = $_COOKIE['data'] . '_' . date('Y-m-d_H-i-s') . '.png';
         $_POST['gambar'] = $fileName;
         $fileAllow = array('jpg', 'png', 'jpeg', 'img');
         $ext = pathinfo($_FILES['gambar']['name'], PATHINFO_EXTENSION);

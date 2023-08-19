@@ -12,7 +12,14 @@ class Home_model{
 
     public function getAllNews()
     {
-        $this->db->runQuery('SELECT * FROM ' . $this->tableNews);
+        $this->db->runQuery('SELECT * FROM ' . $this->tableNews . ' WHERE news_status=1');
+        return $this->db->resultAll();
+    }
+
+    public function getSearchNews($search)
+    {
+        $this->db->runQuery('SELECT * FROM ' . $this->tableNews . " WHERE news_status = 1 AND news_title LIKE :search");
+        $this->db->bindQuery('search', '%' . base64_encode($search) . '%');
         return $this->db->resultAll();
     }
 
